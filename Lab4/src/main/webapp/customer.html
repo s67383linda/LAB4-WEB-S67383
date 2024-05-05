@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Form</title>
+    <style>
+        h2 {
+            color: purple; /* Applying purple color to the h1 heading */
+        }
+    </style>
+</head>
+<body>
+    <h1>Use JSP Sriplet and JSP Expression in application</h1>
+    <h2>Customer discount</h2>
+    <form action="processCustomer.jsp" method="post">
+
+        
+        <label for="cust_no">Customer Code:</label>
+        <input type="text" id="cust_no" name="cust_no" placeholder="Key-in customer code"><br>
+
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Key-in quantity"><br>
+
+
+        <label for="cust_type">Customer Type:</label>
+        <input type="radio" id="normal" name="cust_type" value="1">
+        <label for="normal">Normal Customer</label>
+        <input type="radio" id="privilege" name="cust_type" value="2">
+        <label for="privilege">Privilege Customer</label><br> 
+
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Cancel"/>
+    </form>
+</body>
+</html>
